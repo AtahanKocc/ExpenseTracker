@@ -3,9 +3,9 @@ import { GlobalContext } from '../context/GlobalState';
 
 
 export const Balance = () => {
-  const {transactions} = useContext(GlobalContext);
+  const {transactions} = useContext(GlobalContext); // useContext hook u ile globalcontext icindeki transaction verisine erisim saglanır
   
-  const amounts = transactions.map(transaction => transaction.amount);
+  const amounts = transactions.map(transaction => transaction.amount); // amounts değişkeni, transactions dizisinden tüm işlemlerin miktarlarını (amount) içeren bir dizi oluşturur
   
   const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
 

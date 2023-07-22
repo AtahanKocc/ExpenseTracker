@@ -68,3 +68,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Project Description
+
+index.js -> Uygulamanın ana giriş noktasıdır. Uygulamanın başlatılmasını sağlar. 
+
+
+App.js -> Uyg ana bileşenidir. Tüm componentleri içerir.
+
+Header.js -> Başlığımızı tanımladık.
+
+Balance.js -> Bakiye bilgisini gösterir.
+
+
+IncomeExpenses.js -> Gelir - Gider bilgisini gösterir.
+
+
+Transaction.js -> Uygulamanın işlem geçmişini gösterir.
+
+
+TransactionList.js -> Uygulamanın işlem listesini gösterir.
+
+
+
+GlobalState.js -> global bir durum yönetimi için gerekli olan GlobalContext ve GlobalProvider bileşenlerini oluşturur. Bu yapı sayesinde, tüm bileşenler, verileri okuyabilir ve değiştirebilirler.
+
+
+AppReducer.js -> uygulamanın durumunu yöneten bir azaltıcı (reducer) işlevi tanımlar. 
+

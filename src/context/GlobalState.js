@@ -4,7 +4,7 @@ import AppReducer from './AppReducer';
 // Initial State
 const initialState = {
     transactions: []
-}
+} // baslangıc durumunu olusturduk
 
 
 // Create Context
@@ -17,14 +17,14 @@ export const GlobalProvider = ({children}) => {
 
   // Actions
   function deleteTransaction(id) {
-    dispatch({
+    dispatch({ // dispatch fonksiyonu, reducer fonksiyonunu tetikler
         type: 'DELETE_TRANSACTION',
         payload: id
   });
 }
 
 function addTransaction(transaction) {
-    dispatch({
+    dispatch({ // dispatch fonksiyonu, reducer fonksiyonunu tetikler
         type: 'ADD_TRANSACTION',
         payload: transaction
   });
